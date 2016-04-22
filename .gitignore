@@ -1,4 +1,5 @@
 /.idea
+/gradlew.bat
 /app/app.iml
 *.iml
 .gradle
