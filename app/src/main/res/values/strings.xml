@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlgViewDemo</string>
+    
+    <string-array name="algorithm_names">
+        <item>Select...</item>
+        <item>ShellSort</item>
+        <item>MergeSort</item>
+        <item>InsertionSort</item>
+        <item>QuickSort</item>
+    </string-array>
+    
+</resources>
