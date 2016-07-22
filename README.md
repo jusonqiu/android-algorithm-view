@@ -1,4 +1,4 @@
-# Algorithm View For Android
+# Algorithm View For Android [![Build Status](https://travis-ci.org/jusonqiu/android-algorithm-view.svg?branch=master)](https://travis-ci.org/jusonqiu/android-algorithm-view)
 Android 平台上展示一些算法过程。
 
 ## 部分动画
