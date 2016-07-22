@@ -13,6 +13,13 @@ android:
   - android-sdk-license-.+
   - google-gdk-license-.+
 before_script:
-  - chmod +x gradlew
+- chmod +x gradlew
 script:
-  - "./gradlew build"
+- "./gradlew build"
+deploy:
+  provider: releases
+  api_key:
+    secure: qOe+Lu3Y6JAdZeFo/rEB3YZxMGsv7V4PdiobqmGog+2IZnrunJOWlmy0gyts3gPlUyYgZ2NUzXDG0hr73poXVbu9t6+sfzHUu0Do35fKG5nqBSp3Eq2XjK/+mCbkxKwCiiTIofd0Z7sSTnHtq1HqhPQAwvggyAaqzcEe01kpFmhOlHAwGsh1k91n+IyToyrEnfZPfBWFoMBQAkQqKovHXYeLWcPbxEgrbHpmprDn2TqEZgTEARJk62g9SmflhijfEcUEj9tDPkml8xBoMZap1IRdVgjqntlIKSAKv/JuhYYF/5KnV2IAQda05nCph1gxdcyRmflxwiwUAmElV1GE6FF1VFS+/irpdVypzITchKegf49C4wSIq5oRwjrwCINH0NioZTN2I5SMEAa8PtAqyuWojf2FQK1XaNOJJjpsPGo8O9KsTZMzxlm3X+mY8HlFdkP6Uu5DDEaeCoUETW9kBQscT8/eX4Rgt3S3wl56XnYZ+8GnXyXzduRx2nEjTk+k/PaUFWrvT5WutKjerqrxZOk2sHjGLer/bibyeHA60cSljka3o6ygXdCPD2LlRRCF1Xcp7cBVSQYpV0ZV6yBFzUee5Po8XzJv7D6qXDFz03rxslZWS3M2InGtHQ2CrOV1oGpjaezXp11nb+tDIgWtEZXLPnd4Y/3KtwBG8h0pNTM=
+  file: app/build/outputs/apk/app-release.apk
+  on:
+    repo: jusonqiu/android-algorithm-view
